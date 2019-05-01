@@ -1,38 +1,46 @@
-body{
+body {
   font-family: 'Poppins', sans-serif;
-  background: #272727;
+  font-size: 12pt;
+  background: #E0E3EF;
 }
 
-h1{
+h1 {
+  font-family: 'Poppins', sans-serif;
   font-size: 32pt;
   font-weight: 900;
   font-style: italic;
   font-stretch: expanded;
-  color: red;
 }
 
-h2{
-  font-size: 28pt;
+h2 {
+  font-size: 24pt;
   font-family: 'Poppins', sans-serif;
 }
 
-.jumbotron{
-  background-size: cover;
-  background-image: url("/images/tobias-van-schneider-88137-unsplash.jpg");
+.jumbotron {
   text-align: center;
   color: whitesmoke;
   line-height: 1.5;
   font-size: 14pt;
+  padding: 0%;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url("/images/frank-mckenna-127338-unsplash.jpg");
+  padding-bottom: 2%;
 }
 
-.card{
+.card {
   display: block;
+  background-color:#D3E2EC;
+  color: black;
 }
 
 /* Mind Card & Quotes Styling */
 .card-header {
   font-weight: 800;
   font-size: 18pt;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), url("/images/jorge-vasconez-285711-unsplash.jpg");
+  color: whitesmoke;
 }
 
 #inspirationText {
@@ -49,12 +57,21 @@ font-size: 12pt;
   font-size: 12pt;
 }
 
-img {
+.card-img-top {
   display: block;
   height: auto;
   width: 250px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  display: block;
+  height: auto;
+  width: 250px;
   padding: 5px;
   margin-left: auto;
   margin-right: auto;

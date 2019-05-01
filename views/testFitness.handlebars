@@ -2,21 +2,24 @@
 <body>
 <h2>Fitness Challenge!<br>
 <div id="timer">
-    <div id="display">00:00</div></h1> 
-    <div>
+    <div id="displayMoment"></div></h2> 
+    <div><br>
         <button id="startButton" class="btn btn-success">Start</button>
         <button id="stopButton" class="btn btn-danger">Stop</button>
         <button id="resetButton" class="btn btn-primary">Reset</button>
         <button id="lapButton" class="btn btn-warning">Lap</button>
     </div>
-<h2> <br>
+    <h2>Timer: <div id="display">00:00</div></h2>
     <div class="container">
-      <iframe width="auto" height="315" src="https://www.youtube.com/embed/videoseries?list=PLQSMS0J6JbrKdSOSbyJXaQ_zN_HSSp7zZ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div> <br>
+    {{!-- <p>Click Image to Load Today's Workout</p> --}}
+</div>
+    <iframe width="auto" height="315" src="https://www.youtube.com/embed/videoseries?list=PLQSMS0J6JbrKdSOSbyJXaQ_zN_HSSp7zZ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <div id="laps"></div>
-</body>
+    </body>
 
 <script>
+//timer with lap function
+
   window.onload = function() {
   $("#startButton").on("click", start);
   $("#stopButton").on("click", stop);
@@ -47,7 +50,7 @@ function stop() {
 }
 function lapping() {
   var converted = timeConverter(time);
-  $("#laps").append("<p> ~~ Lap #" + lap + " : " + converted + " ~~ </p>");
+  $("#laps").append("<p>Lap " + lap + " : " + converted + "</p>");
   lap++;
   console.log(lap + " : " + converted);
 }
@@ -70,4 +73,93 @@ function timeConverter(t) {
   }
   return minutes + ":" + seconds;
 }
+
+//inserting Orran's fitness array
+const imlocation = ("/images/");
+  function ImageArray(n) {
+    this.length = n;
+    for (var i = 1; i <= n; i++) {
+      this[i] = ' '
+      console.log(i);
+    }
+  }
+  function linkArray(n) {
+    this.length = n;
+    for (var i = 1; i <= n; i++) {
+      this[i] = ' '
+      console.log(i);
+    }
+  }
+  image = new ImageArray(7);
+  image[0] = 'sunday.jpg';
+  image[1] = 'monday.jpg';
+  image[2] = 'tuesday.jpg';
+  image[3] = 'wednesday.jpg';
+  image[4] = 'thursday.jpg';
+  image[5] = 'friday.jpg';
+  image[6] = 'saturday.jpg';
+  image[7] = 'sunday.jpg';
+  image[8] = 'monday.jpg';
+  image[9] = 'tuesday.jpg';
+  image[10] = 'wednesday.jpg';
+  image[11] = 'thursday.jpg';
+  image[12] = 'friday.jpg';
+  image[13] = 'saturday.jpg';
+  image[14] = 'sunday.jpg';
+  image[15] = 'monday.jpg';
+  image[16] = 'tuesday.jpg';
+  image[17] = 'wednesday.jpg';
+  image[18] = 'thursday.jpg';
+  image[19] = 'friday.jpg';
+  image[20] = 'saturday.jpg';
+  image[21] = 'sunday.jpg';
+  image[22] = 'monday.jpg';
+  image[23] = 'tuesday.jpg';
+  image[24] = 'wednesday.jpg';
+  image[25] = 'thursday.jpg';
+  image[26] = 'friday.jpg';
+  image[27] = 'saturday.jpg';
+  image[28] = 'sunday.jpg';
+  image[29] = 'monday.jpg';
+  link = new linkArray(7);
+  link[0] = 'https://youtu.be/kaFs0XcgUfo';
+  link[1] = 'https://youtu.be/3VpkyIcnT64';
+  link[2] = 'https://youtu.be/WRnq49TAv-w';
+  link[3] = 'https://youtu.be/9pBEn_zQhoc';
+  link[4] = 'https://youtu.be/t3elxPJ1HU4';
+  link[5] = 'https://youtu.be/wTfWbsQql1o';
+  link[6] = 'https://youtu.be/AAPpXm-q7lc';
+  link[7] = 'https://youtu.be/jKT7-9L935g';
+  link[8] = 'https://youtu.be/mG0iaoLM2vc';
+  link[9] = 'https://youtu.be/bR-XzXen9xU';
+  link[10] = 'https://youtu.be/fKbwSN6hwxw';
+  link[11] = 'https://youtu.be/l2XsG9W5rYo';
+  link[12] = 'https://youtu.be/6sHRqhKCJeA';
+  link[13] = 'https://youtu.be/Ao-nV3IdINQ';
+  link[14] = 'https://youtu.be/XUDOpNWhVr0';
+  link[15] = 'https://youtu.be/SNfgW5r0nOo';
+  link[16] = 'https://youtu.be/ZL9Y-IIedb0';
+  link[17] = 'https://youtu.be/sgc_gNStBqc';
+  link[18] = 'https://youtu.be/vvNkomexxcs';
+  link[19] = 'https://youtu.be/Js_-S-Qcqdc';
+  link[20] = 'https://youtu.be/VZF5GWd7t9E';
+  link[21] = 'https://youtu.be/sflrxv53L-o';
+  link[22] = 'https://youtu.be/GmrgJGwmBFY';
+  link[23] = 'https://youtu.be/Zj_I4lE_3uM';
+  link[24] = 'https://youtu.be/3npJSSGOpXg';
+  link[25] = 'https://youtu.be/p6j00E71rvE';
+  link[26] = 'https://youtu.be/qIDC7Ttfjn0';
+  link[27] = 'https://youtu.be/8JLMA-Z5S1o';
+  link[28] = 'https://youtu.be/fR_aMGh_F60';
+  link[29] = 'https://youtu.be/W-5q50TkMio';
+  var currentdate = new Date();
+  var imagenumber = currentdate.getDay();
+  //document.write('<a href="' + link[imagenumber] + '"><img src="' + imlocation + image[imagenumber] + '" border="0"></a>');
+
+  (function () {
+    const nowMoment = moment();
+    const eDisplayMoment = document.getElementById("displayMoment");
+    eDisplayMoment.innerHTML = nowMoment.format('MM-DD-YYYY');
+  })();
+
 </script>
