@@ -1,8 +1,12 @@
+// Admin end points for demo.
+// These end points are used in the demo to fast forward or reset the 30 day
+// progress on the challenge.
 var db = require("../models");
 
 module.exports = function (app) {
 
     // Run the admin reset scripts.
+    // This end point will reset the 30 day counter and reset the metrics entries.
     app.get("/admin/reset", function (req, res) {
         console.log("/admin/reset");
 
@@ -66,6 +70,7 @@ module.exports = function (app) {
     });
 
     // Run the admin fforward scripts.
+    // This end point will fast forward the challenge to the end of the 30 days.
     app.get("/admin/fforward", function (req, res) {
         console.log("/admin/fforward");
 

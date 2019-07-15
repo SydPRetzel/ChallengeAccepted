@@ -1,3 +1,4 @@
+// SQL model for curated inspirational quote table.
 module.exports = function (sequelize, DataTypes) {
     var Inspiration = sequelize.define("Inspiration", {
         day_id: {
