@@ -19,12 +19,12 @@ Challenge Accepted is a responsive, mobile ready, self improvement app that pres
 
 ![Landing page bottom](https://github.com/SydPRetzel/ChallengeAccepted/blob/master/LandingBottom.png)
 
-The app presents the user with an initial challenge announcement on the landing page and button click if they choose to accept.  Thereafter, the app presents a motivational quote, a fitness challenge and a spirit bar to track progress.  Clicking the Begin Fitness Challenge button will present the user with the day's fitness challenge.
+The app presents the user with an initial challenge announcement on the landing page and button to click if they choose to accept.  Thereafter, the app presents a motivational quote, a fitness challenge and a spirit bar to track progress.  Clicking the Begin Fitness Challenge button will present the user with the day's fitness challenge.
 
 ![Fitness page](https://github.com/SydPRetzel/ChallengeAccepted/blob/master/Fitness.png)
 *Daily Fitness Challenge*
 
-The clicking the Daily Checkin button will present the user with a form where they can input their resting heart rate,  their body mass index and their mood level.  The user can also input a blog entry for the day.
+Clicking the Daily Checkin button will present the user with a form where they can input their resting heart rate,  their body mass index and their mood level.  The user can also input a blog entry for the day.
 
 ![Checkin page](https://github.com/SydPRetzel/ChallengeAccepted/blob/master/Checkin.png)
 *Daily Checkin*
